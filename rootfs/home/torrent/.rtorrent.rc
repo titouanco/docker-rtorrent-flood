@@ -8,8 +8,13 @@ directory = /data/torrents
 session = /data/.session
 encryption = allow_incoming, try_outgoing, enable_retry
 trackers.use_udp.set = yes
-dht.mode.set = off
-protocol.pex.set = no
+
+# DHT
+dht.mode.set = auto
+dht.port.set = 6881
+
+# Peer Exchange
+protocol.pex.set = yes
 
 min_peers = 1
 max_peers = 100
